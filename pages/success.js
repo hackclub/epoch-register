@@ -1,21 +1,9 @@
-import Error from 'next/error'
 import {
-  Box,
-  Input,
-  Divider,
   Card,
   Container,
   Text,
-  Button,
-  Heading,
-  Flex,
-  Select,
-  Textarea,
-  Field,
-  Grid
+  Box
 } from 'theme-ui'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 export default function Register({ notFound, registrationRecord, params }) {
   return (
@@ -24,27 +12,23 @@ export default function Register({ notFound, registrationRecord, params }) {
         px={[4, 4]}
         py={[3, 3]}
         sx={{
-          color: 'blue',
-          textAlign: 'left'
+          color: 'white',
+          textAlign: 'center'
         }}
       >
-        <Text sx={{ color: 'red', fontSize: '27px', fontWeight: 800 }}>
-          Thank you for signing up!
-        </Text>
-        <br />
-        <Text>
-          ❤️ You're on the waitlist! We really hope we can meet you! Make sure you check your email in
-          the coming days and weeks for important updates. Also, check out the{' '}
-          <Text
+        <Box sx={{ color: 'green', fontSize: '27px', fontWeight: 800, mb: 2 }}>
+        Thank you for signing up!
+        </Box>
+        <Box sx={{lineHeight: '1.4'}}>
+          We're really excited to meet you! To confirm your registration, you'll need to join the <Text
             as={'a'}
             href="https://hackclub.com/slack"
             target="_blank"
             sx={{ color: 'red' }}
           >
             Hack Club Slack
-          </Text>{' '}
-          if you'd like to meet other hackers.
-        </Text>
+          </Text>. We've emailed you with instructions to join and confirm your registration.
+        </Box>
       </Card>
     </Container>
   )

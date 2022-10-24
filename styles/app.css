@@ -51,5 +51,6 @@
 }
 
 a {
-  color: var(--theme-ui-colors-red)
+  color: var(--theme-ui-colors-green);
+  text-decoration: none;
 }

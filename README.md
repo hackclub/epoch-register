@@ -1,12 +1,12 @@
 # Register
-This is the registration form that was used for [Assemble!](https://github.com/hackclub/assemble)
+This is the registration form that was used for [Epoch!](https://github.com/hackclub/epoch)
 
 ## Setup
 
 1. Clone the repository and enter it
 ```
-git clone https://github.com/hackclub/www-assemble-register.git
-cd www-assemble-register
+git clone https://github.com/hackclub/epoch-register.git
+cd epoch-register
 ```
 2. Install packages
 ```
@@ -17,7 +17,7 @@ or
 npm install
 ```
 3. Change questions to your liking
-Locate `lib/manifest.json` and edit/add/remove questions to your liking. For more information about `manifest.json`, click [here](https://github.com/hackclub/www-assemble-register#manifest)
+Locate `lib/manifest.json` and edit/add/remove questions to your liking. For more information about `manifest.json`, click [here](https://github.com/hackclub/epoch-register#manifest)
 
 4. Add environment variables and customize
 Add a `.env` file with your AirTable API key. [How do I get my API key?](https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-)
