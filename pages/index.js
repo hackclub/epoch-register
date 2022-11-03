@@ -5,6 +5,7 @@ import {
   Divider,
   Card,
   Container,
+  Image,
   Text,
   Button,
   Heading,
@@ -31,11 +32,11 @@ export default function Register() {
   return (
     <>
       <ToastContainer align="right" />
-      <Grid columns={`3fr 2fr`}>
+      <Grid columns={[1, `3fr 2fr`]}>
         <Card px={[4, 4]} py={[4, 4]}>
           <Box sx={{ display: ['block', 'flex'], alignItems: 'center', mb: 3 }}>
             <Flex sx={{ alignItems: 'center', flexGrow: 1 }}>
-              <Text
+               <Text
                 variant="subheadline"
                 sx={{
                   fontWeight: 900,
@@ -60,6 +61,7 @@ export default function Register() {
                 </Text>
               </Text>
             </Flex>
+            
             <Box
               sx={{
                 alignItems: 'center',
@@ -71,11 +73,16 @@ export default function Register() {
               onClick={() => poster()}
             ></Box>
           </Box>
+          <Box mb={3}>
+          <Image src="https://cloud-i6gnfmcit-hack-club-bot.vercel.app/0hack_club_assemble_ltnj_02693-min.jpg" width="auto" sx={{display: ['block', 'none'], borderRadius: 4}} />
+             
+          </Box>
           <Box bg="elevated" p={3} mb={3} sx={{ borderRadius: 3 }}>
             [Slack Announcement] Feel free to contact{' '}
             <a href="mailto:epoch@hackclub.com">epoch@hackclub.com</a> for
             help!
           </Box>
+          
           {manifest.questions.map((sectionItem, sectionIndex) => {
             if (typeof sectionItem.check != 'undefined') {
               if (sectionItem.check(data)) {
