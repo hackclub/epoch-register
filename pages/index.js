@@ -27,7 +27,7 @@ export default function Register() {
   const router = useRouter()
   useEffect(() => {
     setData({"Name": router.query.name, "Email": router.query.email})
-  })
+  }, [])
   return (
     <>
       <ToastContainer align="right" />
@@ -44,7 +44,7 @@ export default function Register() {
                   ml: 2,
                   textAlign: 'left',
                   fontSize: 4,
-                  color: 'green'
+                  color: 'pink'
                 }}
                 as="div"
               >
@@ -71,7 +71,7 @@ export default function Register() {
               onClick={() => poster()}
             ></Box>
           </Box>
-          <Box bg="darker" p={3} mb={3} sx={{ borderRadius: 3 }}>
+          <Box bg="elevated" p={3} mb={3} sx={{ borderRadius: 3 }}>
             [Slack Announcement] Feel free to contact{' '}
             <a href="mailto:epoch@hackclub.com">epoch@hackclub.com</a> for
             help!
@@ -92,7 +92,7 @@ export default function Register() {
               >
                 <Box sx={{ textAlign: 'left', mb: 2 }}>
                   <Text
-                    sx={{ color: 'green', fontSize: '27px', fontWeight: 800 }}
+                    sx={{ color: 'pink', fontSize: '27px', fontWeight: 800 }}
                   >
                     {sectionItem['header']}
                   </Text>
