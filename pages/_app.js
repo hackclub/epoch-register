@@ -17,13 +17,13 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <Meta
           as={Head}
-          name="Join us for Epoch this New Year's." // site name
+          name="Hack Club" // site name
           title="Join us for Epoch this New Year's." // page title
           description="Sign up today for a New Year's you'll never forget."
-          image="https://cloud-gr64lwarr-hack-club-bot.vercel.app/0meta-assemble__1_.png" // large summary card image URL
-          color={theme.colors.black} // theme color
+          image="https://cloud-okdr3fmqq-hack-club-bot.vercel.app/0register.epoch.hackclub.com-meta.png" // large summary card image URL
+          color={theme.colors.pink} // theme color
         />
-        <NProgress color={'#ec3750'} />
+        <NProgress color={theme.colors.pink} />
         <ForceTheme theme="light" />
         <div
           style={{
