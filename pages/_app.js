@@ -20,7 +20,7 @@ export default class App extends NextApp {
           name="Hack Club" // site name
           title="Join us for Epoch this New Year's." // page title
           description="Sign up today for a New Year's you'll never forget."
-          image="https://cloud-okdr3fmqq-hack-club-bot.vercel.app/0register.epoch.hackclub.com-meta.png" // large summary card image URL
+          image="https://cloud-6hdjg5twa-hack-club-bot.vercel.app/1register.epoch.hackclub.com-meta.png" // large summary card image URL
           color={theme.colors.pink} // theme color
         />
         <NProgress color={theme.colors.pink} />
