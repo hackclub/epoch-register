@@ -27,16 +27,25 @@ export default function Register() {
   const [disabled, setDisabled] = useState(false)
   const router = useRouter()
   useEffect(() => {
-    setData({"Name": router.query.name, "Email": router.query.email})
+    setData({ Name: router.query.name, Email: router.query.email })
   }, [])
   return (
     <>
       <ToastContainer align="right" />
       <Grid columns={[1, `3fr 2fr`]}>
-        <Card px={[4, 4]} py={[4, 4]}>
+        <Card
+          px={[4, 4]}
+          py={[4, 4]}
+          sx={{
+            background: [
+              `linear-gradient(40deg, rgba(255,71,148,0.55) 0%, rgba(214,58,249,0.45) 100%), linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%)`,
+              `linear-gradient(40deg, rgba(255,71,148,0.55) 0%, rgba(214,58,249,0.45) 100%), linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4965161064425771) 20%, rgba(0,0,0,0.2987570028011205) 100%)`
+            ]
+          }}
+        >
           <Box sx={{ display: ['block', 'flex'], alignItems: 'center', mb: 3 }}>
             <Flex sx={{ alignItems: 'center', flexGrow: 1 }}>
-               <Text
+              <Text
                 variant="subheadline"
                 sx={{
                   fontWeight: 900,
@@ -44,8 +53,8 @@ export default function Register() {
                   flexGrow: 1,
                   ml: 2,
                   textAlign: 'left',
-                  fontSize: 4,
-                  color: 'pink'
+                  fontSize: 5,
+                  color: 'white'
                 }}
                 as="div"
               >
@@ -61,7 +70,7 @@ export default function Register() {
                 </Text>
               </Text>
             </Flex>
-            
+
             <Box
               sx={{
                 alignItems: 'center',
@@ -74,15 +83,17 @@ export default function Register() {
             ></Box>
           </Box>
           <Box mb={3}>
-          <Image src="https://cloud-i6gnfmcit-hack-club-bot.vercel.app/0hack_club_assemble_ltnj_02693-min.jpg" width="auto" sx={{display: ['block', 'none'], borderRadius: 4}} />
-             
+            <Image
+              src="https://cloud-i6gnfmcit-hack-club-bot.vercel.app/0hack_club_assemble_ltnj_02693-min.jpg"
+              width="auto"
+              sx={{ display: ['block', 'none'], borderRadius: 4 }}
+            />
           </Box>
           <Box bg="elevated" p={3} mb={3} sx={{ borderRadius: 3 }}>
             [Slack Announcement] Feel free to contact{' '}
-            <a href="mailto:epoch@hackclub.com">epoch@hackclub.com</a> for
-            help!
+            <a href="mailto:epoch@hackclub.com">epoch@hackclub.com</a> for help!
           </Box>
-          
+
           {manifest.questions.map((sectionItem, sectionIndex) => {
             if (typeof sectionItem.check != 'undefined') {
               if (sectionItem.check(data)) {
@@ -99,7 +110,12 @@ export default function Register() {
               >
                 <Box sx={{ textAlign: 'left', mb: 2 }}>
                   <Text
-                    sx={{ color: 'pink', fontSize: '27px', fontWeight: 800 }}
+                    sx={{
+                      color: 'white',
+                      fontSize: '27px',
+                      fontWeight: 800,
+                      textDecoration: 'underline'
+                    }}
                   >
                     {sectionItem['header']}
                   </Text>
@@ -126,7 +142,7 @@ export default function Register() {
                           label={
                             <>
                               <Text
-                                mb={ item.sublabel ? 1 : 2}
+                                mb={item.sublabel ? 1 : 2}
                                 sx={{
                                   display: 'inline-flex',
                                   alignItems: 'center',
