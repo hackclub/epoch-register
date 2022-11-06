@@ -28,7 +28,7 @@ export default function Register() {
   const router = useRouter()
   useEffect(() => {
     setData({ Name: router.query.name, Email: router.query.email })
-  }, [])
+  }, [router])
   return (
     <>
       <ToastContainer align="right" />
