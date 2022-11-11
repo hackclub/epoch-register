@@ -90,7 +90,17 @@ export default function Register() {
             />
           </Box>
           <Box bg="elevated" p={3} mb={3} sx={{ borderRadius: 3 }}>
-            [Slack Announcement] Feel free to contact{' '}
+               Hello friends! 
+              <br /><br />
+              A new year brings new possibilities, new adventures, and new memories 🎆
+              <br /><br />
+              This winter, 150+ teenage hackers will travel to Delhi NCR for Epoch — Hack Club’s first hackathon outside the US! We’ll build the unexpected, share what we’ve learnt in 2022, and experience the thrill of being in-person together.
+              <br /><br />
+              Join us for an adventure in the city of dreams from December 30th, 2022 to January 1st, 2023. Together, we’ll ring in the new year at a high-school hackathon unlike anything the world has seen before.
+              <br /><br />
+              More details & registration are available at: <a href="https://epoch.hackclub.com">epoch.hackclub.com</a>.
+              <br /><br />
+            Feel free to contact{' '}
             <a href="mailto:epoch@hackclub.com">epoch@hackclub.com</a> for help!
           </Box>
 
