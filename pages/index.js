@@ -210,11 +210,11 @@ export default function Register() {
                               ? {
                                   children: (
                                     <>
-                                      <option value="" disabled style={{color: 'gray'}>
+                                      <option value="" disabled style={{color: 'gray'}}>
                                         Select One
                                       </option>
                                       {item['options'].map(option => (
-                                        <option key={option} style={{color: 'black'}>{option}</option>
+                                        <option key={option} style={{color: 'black'}}>{option}</option>
                                       ))}
                                     </>
                                   )
