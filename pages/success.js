@@ -21,7 +21,7 @@ export default function Register({ notFound, registrationRecord, params }) {
         Thank you for signing up!
         </Box>
         <Box sx={{lineHeight: '1.4', fontSize: 2}}>
-          We're really excited to meet you! To confirm your registration, you'll need to join the <Text
+          We hope we get the chance to meet you! To confirm your registration, you'll need to join the <Text
             as={'a'}
             href="https://hackclub.com/slack"
             target="_blank"
