@@ -58,7 +58,7 @@ export default function Register() {
                 }}
                 as="div"
               >
-                Join us for{' '}
+                Join the waitlist for{' '}
                 <Text
                   sx={{
                     textDecoration: 'none',
@@ -88,6 +88,13 @@ export default function Register() {
               width="auto"
               sx={{ display: ['block', 'none'], borderRadius: 4 }}
             />
+          </Box>
+          <Box bg="red" p={3} mb={3} sx={{ borderRadius: 3, color: 'white' }}>
+            👋 Hey there! You may notice this form has switched over to being
+            a waitlist. The event is currently over-subscribed, however, we expect
+            places to arise and will be offering these places on a first-come-first-serve
+            basis (you'll be notified via email on the Monday of the hackathon).  
+            <b>We strongly recommend still signing up if you're interested.</b>
           </Box>
           <Box bg="elevated" p={3} mb={3} sx={{ borderRadius: 3 }}>
                Hello friends! 
