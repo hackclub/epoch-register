@@ -27,7 +27,7 @@ export default async function Submit (req, res) {
     if (missing.length) return res.json({ success: false, error: `You are missing some fields: ${missing.map(item => `"${item}"`).join(", ")}` });
 
     try {
-        await registrationsAirtable.create(req.body);
+        await registrationsAirtable.create({...req.body, "Waitlisted": true});
     } catch (err) {
         return res.json({ success: false, error: err.message });
     }
